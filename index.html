@@ -1,8 +1,87 @@
-<section>
-    <video style="max-width: 800px; display: block; margin-left: auto; margin-right: auto; border-radius: 8px;" controls autoplay muted loop playsinline>
-        <source src="1BB6028F-9ED9-42D6-9839-B42D59D69C10.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maui Can Sanitation | Trash Can Cleaning</title>
+  <meta name="description" content="Professional trash can cleaning across the island of Maui. Eco-friendly, fast, and affordable bin sanitation." />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav>
+    <h2>Maui Can Sanitation</h2>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="1BB6028F-9ED9-42D6-9839-B42D59D69C10.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
-    <h1>Your Heading Here</h1>
-    <!-- other content -->
-</section>
+    <div class="hero-content">
+      <h1>Island-Wide Trash Can Cleaning</h1>
+      <p>Serving all of Maui • Eco-Friendly • Odor-Free</p>
+      <a href="sms:+18083593370?&body=Hi! I'd like a trash can cleaning estimate. My address is:" class="cta">
+        📱 Message Me Now – 30 Second Estimate
+      </a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Residential Bin Cleaning</h3>
+        <p>Monthly or one-time cleaning for homes, condos, and rentals.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial & HOA Service</h3>
+        <p>Dumpster and bin sanitation for businesses and communities.</p>
+      </div>
+      <div class="card">
+        <h3>Sanitizing & Deodorizing</h3>
+        <p>Removes bacteria, odors, maggots, and harmful germs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Simple & Affordable Pricing</h2>
+    <p>Plans starting at <strong>$25 per can</strong></p>
+    <p>No contracts • No hidden fees</p>
+  </section>
+
+  <section class="service-area">
+    <h2>Service Area</h2>
+    <p>We proudly service the entire island of Maui, including:</p>
+    <p><strong>Kahului • Wailuku • Kihei • Lahaina • Kaanapali • Wailea • Upcountry • Hana</strong></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Maui Can Sanitation</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" />
+      <textarea placeholder="How can we help?"></textarea>
+      <button type="submit">Request Service</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <a href="sms:+18083593370?&body=Hi! I'd like a trash can cleaning estimate. My address is:" class="sticky-cta">
+    📱 Text for Quote
+  </a>
+
+  <footer>
+    <p>© 2026 Maui Can Sanitation • Serving All of Maui</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
