@@ -1,26 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maui Can Sanitation</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maui Can Sanitation | Professional Trash Can Cleaning</title>
+  <meta name="description" content="Professional trash can cleaning across the island of Maui. Eco-friendly, fast, and affordable bin sanitation." />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <!-- Hero Video Section -->
-    <section class="hero-video">
-        <video autoplay muted loop>
-            <source src="hero-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
 
-    <!-- Other content of the page -->
-    <section class="content">
-        <h1>Welcome to Maui Can Sanitation</h1>
-        <p>This is where the rest of your content goes...</p>
-    </section>
+  <!-- Hero Section with Video - NOW AT THE TOP! -->
+  <section class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="1BB6028F-9ED9-42D6-9839-B42D59D69C10.mov" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-logo">Maui Can Sanitation</h1>
+      <p class="hero-subtitle">We Are Professional</p>
+      <h2 class="hero-title">Keep Your Cans Clean & Odor-Free</h2>
+      <a href="sms:+18083593370?&body=Hi! I'd like a trash can cleaning estimate. My address is:" class="hero-cta">GET A QUOTE</a>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Feature Boxes -->
+  <section class="features">
+    <div class="feature-box dark">
+      <span class="feature-icon">🏝️</span>
+      <div class="feature-content">
+        <h3>Island-Wide Service</h3>
+        <p>Serving all of Maui from Kahului to Hana. Professional trash can cleaning wherever you are.</p>
+      </div>
+    </div>
+    <div class="feature-box gold">
+      <span class="feature-icon">✨</span>
+      <div class="feature-content">
+        <h3>Quality Work</h3>
+        <p>Eco-friendly sanitation that eliminates odors, bacteria, and pests. Spotless results guaranteed.</p>
+      </div>
+    </div>
+    <div class="feature-box dark">
+      <span class="feature-icon">💬</span>
+      <div class="feature-content">
+        <h3>Fast Response</h3>
+        <p>Text us for a 30-second estimate. Same-day and next-day service available across Maui.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Residential Cleaning</h3>
+          <p>Monthly or one-time cleaning for homes, condos, and vacation rentals across Maui.</p>
+        </div>
+        <div class="card">
+          <h3>Commercial & HOA</h3>
+          <p>Dumpster and bin sanitation for businesses, restaurants, and communities.</p>
+        </div>
+        <div class="card">
+          <h3>Deep Sanitizing</h3>
+          <p>Removes bacteria, odors, maggots, and harmful germs with professional equipment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <h2 class="section-title">Simple & Affordable Pricing</h2>
+      <p class="pricing-text">Plans starting at <strong>$25 per can</strong></p>
+      <p>No contracts • No hidden fees • Satisfaction guaranteed</p>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="service-area">
+    <div class="container">
+      <h2 class="section-title">Service Area</h2>
+      <p>We proudly service the entire island of Maui, including:</p>
+      <p><strong>Kahului • Wailuku • Kihei • Lahaina • Kaanapali • Wailea • Upcountry • Hana</strong></p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Maui Can Sanitation</h2>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" />
+        <textarea placeholder="How can we help?"></textarea>
+        <button type="submit">Request Service</button>
+      </form>
+      <p id="form-message"></p>
+    </div>
+  </section>
+
+  <!-- Sticky CTA -->
+  <a href="sms:+18083593370?&body=Hi! I'd like a trash can cleaning estimate. My address is:" class="sticky-cta">
+    📱 Text for Quote
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Maui Can Sanitation • Serving All of Maui • (808) 359-3370</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
