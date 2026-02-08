@@ -1,118 +1,252 @@
+.import { /* Add your font imports here */ }
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Your Font Family', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.corner-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    z-index: 1000;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.main-nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.quote-btn {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-logo-img {
+    max-width: 100px;
+}
+
+.hero-subtitle,
+.hero-title {
+    margin: 10px 0;
+}
+
+.hero-cta {
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+.features {
+    padding: 50px 0;
+}
+
+.feature-box {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.feature-box.gold {
+    background: gold;
+}
+
+.feature-icon {
+    width: 50px;
+}
+
+.feature-content {
+    margin-top: 10px;
+}
+
+.services-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-section {
+    padding: 50px 0;
+}
+
 .pricing-subtitle {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 40px;
-  color: #666;
+    text-align: center;
 }
 
 .pricing-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .pricing-card {
-  background: white;
-  border-radius: 12px;
-  padding: 40px 30px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s;
-  position: relative;
-  border: 2px solid transparent;
-}
-
-.pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: transform 0.3s;
 }
 
 .pricing-card.featured {
-  border: 2px solid #f5c842;
-  transform: scale(1.05);
-}
-
-.pricing-card.featured:hover {
-  transform: scale(1.05) translateY(-10px);
+    border-color: gold;
 }
 
 .badge {
-  position: absolute;
-  top: -15px;
-  right: 20px;
-  background: #f5c842;
-  color: #0a1128;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 1px;
+    background: red;
+    color: #fff;
+    padding: 5px;
 }
 
-.pricing-header h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #0a1128;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
+.pricing-header,
 .price {
-  font-family: 'Poppins', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: #f5c842;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.price span {
-  font-size: 16px;
-  color: #666;
-  font-weight: 400;
+    font-weight: bold;
+    text-align: center;
 }
 
 .pricing-features {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
-.pricing-features li {
-  padding: 12px 0;
-  color: #555;
-  font-size: 15px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.pricing-features li:last-child {
-  border-bottom: none;
+    list-style: none;
 }
 
 .pricing-btn {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  background: #0a1128;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-  border-radius: 8px;
-  transition: all 0.3s;
-}
-
-.pricing-btn:hover {
-  background: #f5c842;
-  color: #0a1128;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
 }
 
 .pricing-note {
-  text-align: center;
-  color: #666;
-  font-size: 16px;
-  margin-top: 30px;
+    font-size: 12px;
+}
+
+.service-area {
+    padding: 50px 0;
+}
+
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form button {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.sticky-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: pulse 1s infinite;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .corner-logo {
+        width: 80px;
+    }
+    .nav-container {
+        flex-direction: column;
+    }
+    .hero {
+        height: 70vh;
+    }
+    .features,
+    .services-section,
+    .contact-section {
+        padding: 30px 0;
+    }
 }
